@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array using Constructor Parameter</title>
+  </head>
+  <body>
+    <h3>3. Literal type of Array => Array using Constructor Parameters</h3>
+
+    <script>
+      // new keyword is used to create instance or can call it as (reference) to any constructor.
+      // syntax : -->  var instance = new Constructor();
+      var colors = new Array("blue", "red", "green", "gold");
+
+      var phone = [
+        "+91-9873654263",
+        "+91-9873635428",
+        "9837365124",
+        "7363542837",
+      ];
+
+      console.log("Array constructor parameter =", colors);
+
+      // array.forEach(function(item,index){
+      // Statements
+      // })
+
+      colors.forEach(function (x, index) {
+        document.write(`<h3 style = "color:${x}">${index} ${x} </h3>`);
+      });
+    </script>
+  </body>
+</html>

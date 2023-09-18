@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables</title>
+  </head>
+  <body>
+    <h1>Variables - inputs</h1>
+
+    <script>
+      /*  
+      variable = value;
+      x + y = sum
+      x = 10; // number
+      y = 20;
+
+      hi x, welcome to javascript
+      x = "Arun"; // String
+
+      x = true; //boolean
+
+      x = [12,22,33,444,48,58] // Array (group of values)
+
+      x = null
+      y = ""  //empty String
+      z = undefined;
+
+      // Javascript is a case sensetive language.
+
+      variable = value
+
+      // lowercase alphabet
+      a = 123; //number
+
+      // Uppercase alphabet
+      A = 145; //number
+
+      -----   Data types - values  -----------------
+
+      Number - 1, 125, 0.5, 7.25 //any type of numbers
+
+      String - '' "" // anything which is enclosed within quotes is considered as String.
+
+      templateLiteral = `` // anything which is enclosed within backtick is called Template Literals.
+
+      Boolean true(1), false(0)
+
+      Array []
+
+      object {key : value} 
+      
+      null
+
+      undefined
+
+      */
+
+      // Datatype variable = value;
+
+      var x = 123; //number
+      var p = 123.345; // number
+      var x = 12e4; // number
+      var x1 = true; //boolean
+      var title = "welcome to javascript"; //String
+
+      //   object
+      var user = {
+        // property = key:value
+        name: "Raju",
+        email: "raju@gmail.com",
+        age: 23,
+        isAdmin: false,
+        hobbies: ["riding", "trekking", "driving"],
+      };
+
+      var num = [123, 343, 876, 1008]; //Array
+
+      document.write("<h1>" + x + "</h1>");
+      document.write(`<h1> ${x} </h1>`);
+
+      document.write(`<h1> ${num[2]} </h1>`); //array[index]
+      document.write(`<h1> ${num} </h1>`); //array
+
+      document.write(`<h1> ${user.name} </h1>`); // object.key
+      document.write(`<h1> ${user["email"]} </h1>`); // object['key']
+      document.write(`<h1> Raju age = ${user["age"]} </h1>`);
+      document.write(`<h1> ${user.hobbies} </h1>`);
+
+      console.log("user =", user);
+    </script>
+  </body>
+</html>

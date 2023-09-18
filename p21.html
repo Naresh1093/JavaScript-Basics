@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Nested Loops</h3>
+    <p>Write a program to print the pattern</p>
+    <p>
+        <pre>
+            1
+            2 3
+            4 5 6
+            7 8 9 10
+        </pre>
+    </p>
+
+    <script>
+        let x = 1;
+        let pattern = "";
+
+        for(var i=0; i<=6; i++){
+            // console.log('before x = ', x);
+            for(var j=1; j<=i; j++){
+                pattern += x + " ";
+                x++;
+                console.log('after x = ', x);
+            }
+            pattern += "<br>";
+        }
+        console.log(`${pattern}`);
+        document.write(`${pattern}`);
+    </script>
+  </body>
+</html>

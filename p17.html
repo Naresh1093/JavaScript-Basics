@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find the Largest number</title>
+  </head>
+  <body>
+    <h3>
+      W.A.P to find the Largest Number using if and else condition statements
+    </h3>
+
+    <script>
+      // fixed value using variables
+      //   var p = 10;
+      //   var q = 30;
+      //   var r = 50;
+      //   var s = 232;
+      //   var t = 763;
+
+      //  Taking values from user using prompt
+      var p = Number(prompt("enter the value of p?"));
+      var q = Number(prompt("enter the value of q?"));
+      var r = Number(prompt("enter the value of r?"));
+      var s = Number(prompt("enter the value of s?"));
+      var t = Number(prompt("enter the value of t?"));
+
+      if (p > q && p > r && p > s && p > t) {
+        document.write(`<h1> p = ${p} is largest number </h1>`);
+      } else if (q > p && q > r && q > s && q > t) {
+        document.write(`<h1> q = ${q} is the largest number </h1>`);
+      } else if (r > p && r > q && r > s && r > t) {
+        document.write(`<h1> r = ${r} is the largest number </h1>`);
+      } else if (s > p && s > q && s > r && s > t) {
+        document.write(`<h1> s = ${s} is the largest number`);
+      } else if (t > p && t > q && t > r && t > s) {
+        document.write(`<h1> t = ${t} is the largest number`);
+      } else {
+        document.write("Check your input");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logocal OR || Operator</title>
+  </head>
+  <body>
+    <h1>Logical OR (||) Operator</h1>
+
+    <script>
+      let skills = prompt("Enter Your Skills");
+
+      if (skills == "HTML" || skills == "CSS" || skills == "Javascript") {
+        document.write(`<h1> Skills : ${skills} </br> 1 Star <h1>`);
+      } else if (
+        skills == "HTML" ||
+        (skills == "CSS" && skills == "Javascript")
+      ) {
+        document.write(`<h1> Skills : ${skills} </h1> </br> <h1> 2 Star </h1>`);
+      } else if (
+        skills == "HTML" ||
+        skills == "CSS" ||
+        (skills == "Javascript" && skills == "ReactJS")
+      ) {
+        document.write(`<h1> Skills : ${skills} </h1> </br> <h1> 3 Star </h1>`);
+      }
+    </script>
+  </body>
+</html>

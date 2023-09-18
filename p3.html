@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var x = 123;
+      var y = 456;
+
+      var i = 12;
+
+      var sum = x + y;
+      console.log("sum = ", sum);
+
+      // Concatination Methods (3 ways we can concat)
+
+      document.write("<h1> Total sum of = ", sum, " values</h1>");
+      document.write("<h1> Total sum of = " + sum + " values</h1>");
+
+      document.write(`<h1> Total sum = ${sum} values </h1>`);
+
+      /*  
+        operators ====>
+        1. Arithmetic  + - * / %
+        2. Logical   && || !   (bitwise & | !)
+            And &&                 NOT a = !a
+         A B  A&&B                     0    1
+         0 0   0                       1    0
+         0 1   0 
+         1 0   0
+         1 1   1 
+            OR ||
+         A B  A||B
+         0 0   0   
+         0 1   1
+         1 0   1
+         1 1   1
+
+         3. Relational / Conditional >, <, >=, <=, ==(equalto), ===(strictly equalto) !==
+                a == b -> evaluate only values  ex:- if(10 == "10")  ----> true
+                a === b -> evaluate both values and datatypes  ex:- if(10 === "10") ---> false (value are same but dataTypes are different so it gives flase).
+          
+         4. Assignment Operator  =, +=, -=, *=, /=, %=   
+                ex:- x = 12;
+                    x + = 20;  -----> x = x + 20;
+         
+         5. Ternary condition ? true : false;
+
+         6. misc , . '' "" {} [] ; : () ^ $ @ `` ~ 
+
+         7. increment or decrement  
+                pre ++i   --i  (pre means first increment then assign the value)     i = i +1,  i= i-1
+                post i++  i--  (post means first assign and then increment value)
+      */
+
+      var x = 12;
+      x += 20;
+
+      // x = x + 20;
+
+      var res = x > 100 ? "say Hi" : "Sorry";
+      document.write(`<h1> result = ${res} </h1>`);
+
+      if (x < 100) {
+        document.write(`<h1> ${x} say Hi </h1>`);
+      } else {
+        document.write("<h3> Sorry </h3>");
+      }
+
+      i = i + 1;
+      i = i - 1;
+      
+    </script>
+  </body>
+</html>
